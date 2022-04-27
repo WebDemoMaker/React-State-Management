@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App, {store} from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from 'react-redux';
 
+// nopw we need to wrap our app component inside provider so we can pass the store to it
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  // since we are using react StrictMode so we can see console.log twice
   <React.StrictMode>
+  <Provider store={store}>
     <App />
+   </Provider>
   </React.StrictMode>
 );
 
