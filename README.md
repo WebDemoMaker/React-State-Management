@@ -4,8 +4,10 @@
 Here is a summary of what and how we are going to implement it
 
 # Call the useSelector hook to read data in React components
-Call the useDispatch hook to dispatch actions in React components
-Put <Provider store={store}> around your entire <App> component so that other components can talk to the store
+## Call the useDispatch hook to dispatch actions in React components
+### Put <Provider store={store}> around your entire <App> component so that other components can talk to the store
+
+## [Youtube video Link](https://www.youtube.com/watch?v=D4bnJxYO11U)
 
 
 	
